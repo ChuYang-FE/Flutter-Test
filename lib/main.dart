@@ -17,7 +17,8 @@ import 'package:flutter/material.dart';
 // import '04_list/03_GridView.dart';
 // import '04_list/04_GridView.dart';
 // import '05_thirdParty/01_dio.dart';
-import '06_state/01_StatefulWidget.dart';
+// import '06_state/01_StatefulWidget.dart';
+import '06_state/02_DataTable.dart';
 
 void main() => runApp(MyApp());
 
