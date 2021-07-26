@@ -19,7 +19,9 @@ import 'package:flutter/material.dart';
 // import '05_thirdParty/01_dio.dart';
 // import '06_state/01_StatefulWidget.dart';
 // import '06_state/02_DataTable.dart';
-import '07_navigation/01_Anonymous.dart';
+// import '07_navigation/01_Anonymous.dart';
+import '07_navigation/00_UnkownPage.dart';
+import '07_navigation/02_NamedRoute.dart';
 
 void main() => runApp(MyApp());
 
@@ -27,6 +29,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      routes: {
+        'home': (context) => HomePage(),
+        'product': (context) => Product(),
+      },
+      initialRoute: 'home',
+      onUnknownRoute: (RouteSettings settings) => MaterialPageRoute(
+        builder: (context) => UnkownPage(),
+      ),
       title: '哈哈哈哈',
       home: Home(),
     );
