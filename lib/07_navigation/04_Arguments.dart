@@ -47,7 +47,7 @@ class Home extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () => Navigator.pushNamed(context, 'user'),
-                child: Text('跳往404页面'),
+                child: Text('user（跳往404页面）'),
               ),
             ],
           ),
